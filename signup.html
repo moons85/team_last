@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="CSS/signup.css">
+  <link rel="shortcut icon" href="image/mark.jpg">
+</head>
+<body>
+  <div class="member">
+    <a href="index.html"><img class="logo" src="image/logo2.png"></a>
+
+    <div class="field">
+        <b>아이디</b>
+        <span>
+          <input type="text" placeholder="exemple@email.com">
+        </span>
+    </div>
+    <div class="field">
+        <b>비밀번호</b>
+        <input class="userpw" type="password">
+    </div>
+    <div class="field">
+        <b>비밀번호 재확인</b>
+        <input class="userpw-confirm" type="password">
+    </div>
+    <div class="field">
+        <b>이름</b>
+        <input type="text">
+    </div>
+
+    <div class="field birth">
+        <b>생년월일</b>
+        <div>
+            <input type="number" placeholder="년(4자)">                
+            <select>
+                <option value="">월</option>
+                <option value="">1월</option>
+                <option value="">2월</option>
+                <option value="">3월</option>
+                <option value="">4월</option>
+                <option value="">5월</option>
+                <option value="">6월</option>
+                <option value="">7월</option>
+                <option value="">8월</option>
+                <option value="">9월</option>
+                <option value="">10월</option>
+                <option value="">11월</option>
+                <option value="">12월</option>
+            </select>
+            <input type="number" placeholder="일">
+        </div>
+    </div>
+
+    <div class="field gender">
+        <b>성별</b>
+        <div>
+            <label><input type="radio" name="gender">남자</label>
+            <label><input type="radio" name="gender">여자</label>
+        </div>
+    </div>
+
+    <div class="field">
+        <b>본인 확인 이메일<small>(선택)</small></b>
+        <input type="email" placeholder="ID입력">
+        <select>
+          <option value="">naver.com</option>
+          <option value="">gamil.com</option>
+          <option value="">hanmail.net</option>
+          <option value="">daum.com</option>
+        </select>
+    </div>
+
+    <input type="submit" value="가입하기">
+</div>
+</body>
+</html>

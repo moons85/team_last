@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  font-family: "jalnan";
+}
+@font-face{
+  font-family: "jalnan";
+  src: url("../font/Jalnan.ttf") format("truetype");
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:14px;
+  background-color: #f5f6f7;
+  line-height: 1.5em;
+  color : #222;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+.member{
+  width: 400px;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.member .logo{
+  display: block;
+  margin :50px auto;
+}
+
+.member .field{
+  margin :5px 0;
+}
+
+.member b{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.member input:not(input[type=radio]),.member select{
+  border: 1px solid #dadada;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.member input[type=submit]{
+background-color: orangered;
+color:#fff
+}
+
+.field.birth div{
+  display: flex;
+  gap:10px;
+}
+
+.field.gender div{
+  border: 1px solid #dadada;
+  padding: 15px 5px;
+  background-color: #fff;
+}
+
+.placehold-text{
+  display: block;
+  position:relative;
+}
+.userpw{
+  background:url(./images/images2/icon-01.png) no-repeat center right 15px;
+  background-size: 20px;
+  background-color: #fff;
+}
+
+.userpw-confirm{
+  background:url(./images/images2/icon-02.png) no-repeat center right 15px;
+  background-size: 20px;
+  background-color: #fff;
+}
+
+@media (max-width:768px) {
+  .member{
+      width: 100%;
+  }
+}

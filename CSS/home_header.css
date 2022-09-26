@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body{
+  font-size: 14px;
+  line-height: 1;
+  font-family: "jalnan";
+}
+.wrap_container{
+  width: 100%;
+}
+
+button{
+  padding: 0;
+}
+
+.nav li{
+  display: inline-block;
+  position: relative;
+  min-width: 53px;
+  min-height: 35px;
+  margin-left: 30px;
+}
+.nav li a:hover{
+  color: rgba(0, 0, 0, 0.836);
+}
+.nav li button span:hover{
+  color: rgba(0, 0, 0, 0.836);
+}
+a{
+  text-decoration: none;
+}
+
+.nav li a{
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+}
+.over button{
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0;
+  font-family: "jalnan";
+  cursor: pointer;
+}
+.btn_srch input::placeholder{
+  font-family: "jalnan";
+}
+.listform{
+  position: absolute;
+  top: 30px;
+  left: -65px;
+  width: 184px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 /20%);
+  list-style: none;
+  display: none;
+  opacity:1
+}
+.listform_mobile{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 184px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 5px 3px 5px 0px rgb(0 0 0 /50%);
+  list-style: none;
+  display: none;
+  opacity:1;
+  font-family: "jalnan";
+  line-height: 30px;
+}
+.listform li a{
+  color: black;
+  font-size: 15px;
+}
+.listform_mobile li a{
+  color: black;
+  font-size: 15px;
+}
+.over:hover .listform{
+  display: block;
+  opacity:1;
+}
+.btn_menu:hover .listform_mobile{
+  display: block;
+  opacity:1;
+}
+
+@font-face{
+  font-family: "jalnan";
+  src: url("../font/Jalnan.ttf") format("truetype");
+}
+
+
+@media all and (min-width:320px){
+  header{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    z-index: 10;
+  }
+  .link_sh{
+    color: black;
+  }
+  .pc{
+    display: none;
+  }
+  .moblie{
+    text-align: center;
+    margin: 10px;
+    order: 2;
+    display:block;
+  }
+  .moblie img{
+    width: 95px;
+    height: 21px;
+  }
+  .nav{
+    display: none;
+  }
+  header section{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn_menu{
+    order: 1;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: url(../image/menu.png) 50% 50% no-repeat;
+    background-size: 24px auto;
+    cursor: pointer;
+  }
+  .btn_srch{
+    margin: 10px;
+    order: 3;
+    font-size: 18px;
+  }
+  .btn_srch input{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+  }
+}
+
+
+@media all and (min-width:1024px){
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    transition: 0.4s;
+    background: #f7323f;
+  }
+  .link_sh{
+    color: white;
+  }
+  header section{
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+    height: 64px;
+    background: none;
+  }
+  header section h1{
+    position: absolute;
+    top: 26px;
+    left: 31px;
+    width: 96px;
+    height: 20px;
+    margin: 0;
+  }
+  .pc{
+    display: block;
+  }
+  .moblie{
+    display: none;
+  }
+  .btn_menu{
+    display: none;
+  }
+  .btn_srch{
+    position: absolute;
+    background: none;
+    border: none;
+    top: 15px;
+    right: 400px;
+    z-index: 10;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+  }
+  .btn_srch input{
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 250px;
+    height: 30px;
+  }
+  
+  .nav{
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    right: 31px;
+    width: auto;
+    text-align: right;
+    list-style: none;
+  }
+  
+}
